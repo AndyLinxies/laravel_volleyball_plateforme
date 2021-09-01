@@ -4,6 +4,7 @@ use App\Http\Controllers\AllEquipeController;
 use App\Http\Controllers\AllJoueurController;
 use App\Http\Controllers\ContinentController;
 use App\Http\Controllers\EquipeController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\JoueurController;
 use App\Http\Controllers\RoleController;
 use App\Models\Equipe;
@@ -37,3 +38,5 @@ Route::resource('/dashboard/readRoles', RoleController::class);
 Route::resource('/all', AllEquipeController::class);
 Route::resource('/allJ', AllJoueurController::class);
 
+//home
+Route::get('/', [HomeController::class, 'index']);

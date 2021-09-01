@@ -28,7 +28,55 @@ class JoueurSeeder extends Seeder
                 'roles_id'=>2,
                 'equipes_id'=>2,
                 'photos_id'=>1
-            ]
+            ],
+            [
+                'nom' => $faker->firstName(),
+                'prenom' => $faker->lastName(),
+                'age'=>$faker->numberBetween(18,30),
+                'phone'=>$faker->phoneNumber(),
+                'email'=>$faker->email(),
+                'genre'=>$gender,
+                'paysOrigine'=>$faker->country(),
+                'roles_id'=>2,
+                'equipes_id'=>null,
+                'photos_id'=>1
+            ],
+            [
+                'nom' => $faker->firstName(),
+                'prenom' => $faker->lastName(),
+                'age'=>$faker->numberBetween(18,30),
+                'phone'=>$faker->phoneNumber(),
+                'email'=>$faker->email(),
+                'genre'=>$gender,
+                'paysOrigine'=>$faker->country(),
+                'roles_id'=>2,
+                'equipes_id'=>null,
+                'photos_id'=>1
+            ],
+            [
+                'nom' => $faker->firstName(),
+                'prenom' => $faker->lastName(),
+                'age'=>$faker->numberBetween(18,30),
+                'phone'=>$faker->phoneNumber(),
+                'email'=>$faker->email(),
+                'genre'=>$gender,
+                'paysOrigine'=>$faker->country(),
+                'roles_id'=>2,
+                'equipes_id'=>2,
+                'photos_id'=>1
+            ],
+            [
+                'nom' => $faker->firstName(),
+                'prenom' => $faker->lastName(),
+                'age'=>$faker->numberBetween(18,30),
+                'phone'=>$faker->phoneNumber(),
+                'email'=>$faker->email(),
+                'genre'=>$gender,
+                'paysOrigine'=>$faker->country(),
+                'roles_id'=>2,
+                'equipes_id'=>2,
+                'photos_id'=>1
+            ],
         ]);
     }
 }

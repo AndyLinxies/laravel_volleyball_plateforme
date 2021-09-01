@@ -21,9 +21,9 @@
             <hr>
             <p class="mt-2 text-sm text-gray-600 dark:text-gray-400"> Joueurs faisant parti de l'equipe: 
                 @forelse ($show->joueurs as $joueur)
-                        <span>{{ $joueur->nom }} | {{ $joueur->prenom }} | {{ $joueur->roles->role }}</span> <a href="#" class="btn btn-success">Voir</a> <br><br>
+                        <span>Nom: {{ $joueur->nom }} |Prenom: {{ $joueur->prenom }} |Role: {{ $joueur->roles->role }}</span>  <br><br>
                     @empty
-                        <span>pasd de joueurs dispo</span>
+                        <span>pas de joueurs dispo</span>
                     @endforelse
             </p>
             <hr>

@@ -24,7 +24,7 @@ class CreateJoueursTable extends Migration
             $table->string('paysOrigine');
             $table->unsignedBigInteger('roles_id');
             $table->foreign('roles_id')->references('id')->on('roles');
-            $table->unsignedBigInteger('equipes_id');
+            $table->unsignedBigInteger('equipes_id')->nullable();
             $table->foreign('equipes_id')->references('id')->on('equipes');
             $table->unsignedBigInteger('photos_id');
             $table->foreign('photos_id')->references('id')->on('photos')->onDelete('cascade');

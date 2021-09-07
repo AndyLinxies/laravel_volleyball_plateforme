@@ -9,7 +9,6 @@ une section ( 2 équipes non remplies ) --}}
             {{-- equipe Remplies --}}
             <div class="w-full max-w-sm px-4 py-3 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
 
-
                 <h3> Equipes remplies</h3>
 
                 @if (count($equipes[0]->joueurs) >= 9)
@@ -20,7 +19,6 @@ une section ( 2 équipes non remplies ) --}}
             </div>
 
             <div class="w-full max-w-sm px-4 py-3 mx-auto bg-white rounded-md shadow-md dark:bg-gray-800">
-
 
                 <h3> 2 equipes non remplies</h3>
                 @foreach ($equipes as $equipe)
